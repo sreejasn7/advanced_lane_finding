@@ -123,7 +123,7 @@ Example of this can be seen below in 4rth image in the 2nd column.
 ### Pipeline (video)
 
 
-Here's a [link to my video result](./output_images/final_output.mp4)
+Here's a [link to my video result](./output_videos/final_output.mp4)
 
 ---
 
