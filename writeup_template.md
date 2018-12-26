@@ -23,7 +23,7 @@ The steps of this project are the following:
 [image4]: ./output_images/image_bird_eye_view.png "Warped Image"
 [image5]: ./output_images/image_polyfit.png "Fit Visual"
 [image6]: ./output_images/image_final_result.png "Output"
-[image7]: ./output_images/image_bird_eye_view.png "Combined Results"
+[image7]: ./output_images/pipeline_image_test4.jpg "Combined Results"
 [video1]: ./output_images/final_output.mp4 "Video"
 
 
@@ -67,14 +67,11 @@ I then used the output `obj_points` and `img_points` to compute the camera calib
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code is written by get
-The code for my perspective transform includes a function called `warper()`, which appears in lines 1 through 8 in the file `example.py` (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook).  The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
-
-* Function used perspective_transform
+* Function used is perspective_transform()
 * used cv2.getPerspectiveTransform and cv2.warpPerspective.
 * Used Hard coded source and destination points. 
 
-* Source Points:
+* Source Points and destination points used:
 ```
 
 self.src = np.float32([[710,463] , [1111 , 715] , [209 , 717],[578 , 463]])
