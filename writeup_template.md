@@ -18,7 +18,7 @@ The steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./output_images/originalAndUndistored_calibration.png "Undistorted"
-[image2]: ./output_images/undistorted.png "Undistorted"
+[image2]: ./output_images/image_undistorted.png "Undistorted"
 [image3]: ./examples/binary_combo_example.jpg "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
@@ -44,7 +44,7 @@ I then used the output `obj_points` and `img_points` to compute the camera calib
 
 ![alt text][image1]
 
-### Pipeline (single images)
+### Pipeline
 
 #### 1. A distortion-corrected image.
 
