@@ -1,7 +1,5 @@
 ## Advanced Lane Finding
 
----
-
 **Advanced Lane Finding Project**
 
 The steps of this project are the following:
@@ -29,9 +27,13 @@ The steps of this project are the following:
 
 ### Pipeline 
 
-The pipeline is created using a class called LaneFinding. Includes all the necessary functions for lane finding process.
+* The pipeline is created using a class called LaneFinding. Includes all the necessary functions for lane finding process.
 
-The code for camera calibration is contained in the first code cell of the IPython notebook located in "final.ipynb" under the 2nd cell.
+* All the FINAL code can be seen in final.ipynb file. Please use this for reference of functions I have created. 
+
+Only For experiment purpose have used pipeline.ipynb. This has all the pipeline steps . But calibration parameters in this file are not final. 
+
+* The code for camera calibration is contained in the first code cell of the IPython notebook located in "final.ipynb" under the 2nd cell.
 
 ### Camera Calibration
 
@@ -61,7 +63,7 @@ I then used the output `obj_points` and `img_points` to compute the camera calib
 * Function used get_binary_image()
 * Used HLS fto extract L and S channels. The L channel used for Sobel in x direction. S channel was robust to lane line. Used thresholds to extract needed masks of L and S channels
 * Inorder to strengthen the lane lines  ,used HSV color threshold.
-* Combned masks from L , S , color thresholded HSV. 
+* Combned masks from L , S , color thresholded HSV for the final binary image.
 
 ![alt text][image3]
 
@@ -83,9 +85,6 @@ self.dst = np.float32([[self.img_size[0]-self._offset_leftright, self._offset_to
 
 
 ```
-
-
-
 
 ![alt text][image4]
 
